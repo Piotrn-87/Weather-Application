@@ -33,7 +33,7 @@ const Result = props => {
           />
           {city}, {country}{" "}
         </h2>
-        <h1> Aktualna temperatura: {temp} &#176;C</h1>
+        <h1 className="Temp">{temp} &#176;C</h1>
         <h4> Minimalna temperatura: {minTemp} &#176;C</h4>
         <h4> Maksymalna temperatura: {maxTemp} &#176;C</h4>
         <h4>Aktualne ciśnienie: {pressure} hpa</h4>
