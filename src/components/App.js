@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "./Form";
 import Result from "./Result";
+import "../style.scss";
 
 const APIkey = "4bea9bc8d4bfd24c6953bdb10a110b19";
 
@@ -64,13 +65,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <Form
-          value={this.state.value}
-          change={this.handleInputChange}
-          submit={this.handleSubmit}
-        />
-        <Result weather={this.state} />
+      <div className="Container">
+        <div className="App">
+          <Form
+            value={this.state.value}
+            change={this.handleInputChange}
+            submit={this.handleSubmit}
+          />
+          <Result weather={this.state} />
+        </div>
       </div>
     );
   }
