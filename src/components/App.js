@@ -20,7 +20,7 @@ class App extends React.Component {
     error: false
   };
 
-  handeInputChange = event => {
+  handleInputChange = event => {
     this.setState({
       value: event.target.value
     });
@@ -67,7 +67,7 @@ class App extends React.Component {
       <div className="App">
         <Form
           value={this.state.value}
-          change={this.handeInputChange}
+          change={this.handleInputChange}
           submit={this.handleSubmit}
         />
         <Result weather={this.state} />
