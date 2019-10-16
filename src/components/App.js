@@ -65,15 +65,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="Container">
-        <div className="App">
-          <Form
-            value={this.state.value}
-            change={this.handleInputChange}
-            submit={this.handleSubmit}
-          />
-          <Result weather={this.state} />
-        </div>
+      <div className="App">
+        <Form
+          value={this.state.value}
+          change={this.handleInputChange}
+          submit={this.handleSubmit}
+        />
+        <Result weather={this.state} />
       </div>
     );
   }

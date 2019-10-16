@@ -10,10 +10,11 @@ body {
     padding: 0;
 }
 
-.Container {
+.App {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -41,5 +42,23 @@ body {
         height: 4rem;
         padding: 1rem;
 
+    }
+}
+
+.Result {
+    padding: 1rem;
+}
+
+.Date {
+    color: whitesmoke;
+}
+
+.Localization {
+    color: whitesmoke;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    &__icon {
+        padding-right: 1rem;
     }
 }

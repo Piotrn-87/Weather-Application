@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Result = props => {
   const {
@@ -22,13 +24,18 @@ const Result = props => {
     const sunsetTime = new Date(sunset * 1000).toLocaleTimeString();
     content = (
       <div>
-        <h2>
-          Prognoza dla: <em> {city} </em>, {country}{" "}
-        </h2>{" "}
-        <h4> Zaktualizowano: {date} </h4>{" "}
-        <h4> Aktualna temperatura: {temp} &#176;C</h4>
-        <h5> Minimalna temperatura: {minTemp} &#176;C</h5>
-        <h5> Maksymalna temperatura: {maxTemp} &#176;C</h5>
+        <h1 className="Date"> {date} </h1>
+        <h2 className="Localization">
+          {" "}
+          <FontAwesomeIcon
+            className="Localization__icon"
+            icon={faMapMarkerAlt}
+          />
+          {city}, {country}{" "}
+        </h2>
+        <h1> Aktualna temperatura: {temp} &#176;C</h1>
+        <h4> Minimalna temperatura: {minTemp} &#176;C</h4>
+        <h4> Maksymalna temperatura: {maxTemp} &#176;C</h4>
         <h4>Aktualne ciśnienie: {pressure} hpa</h4>
         <h4>Siła wiatru: {wind} m/s</h4>
         <h4>Wschód słońca: {sunriseTime}</h4>
