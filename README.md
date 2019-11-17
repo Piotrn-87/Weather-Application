@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Live -> https://piotrn-87.github.io/Weather-Application/
 
+## Weather Application
+
 ## Quick Start
 
 ```bash
@@ -14,3 +16,6 @@ npm start
 # Build for production
 npm run build
 ```
+### Version
+
+1.0.0
